@@ -2,7 +2,7 @@ package gabriel;
 
 public class Main {
 	public static void main(String[] args) {
-		System.out.println("Gabriel");
+		 EscolaFactory.getEscola(1);
 	}
 }
 
