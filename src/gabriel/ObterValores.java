@@ -1,15 +1,12 @@
-package ifpb.edu.br;
+package gabriel;
 
 import java.util.Scanner;
 
-public abstract class ObterValores {
-    protected static final String LS = System.lineSeparator();
+public class ObterValores {
 
-    protected Scanner sc;
+    protected Scanner sc = new Scanner(System.in);
 
-
-
-    protected Integer obterValorInteger(String mensagemProUsuario) {
+    public Integer obterValorInteger(String mensagemProUsuario) {
         Integer valor = null;
 
         while(valor == null) {
@@ -26,7 +23,7 @@ public abstract class ObterValores {
         return valor;
     }
 
-    protected Long obterValorLong(String mensagemProUsuario) {
+    public Long obterValorLong(String mensagemProUsuario) {
         Long valor = null;
 
         while(valor == null) {
@@ -43,7 +40,7 @@ public abstract class ObterValores {
         return valor;
     }
 
-    protected Boolean obterValorBoolean(String mensagemProUsuario) {
+    public Boolean obterValorBoolean(String mensagemProUsuario) {
         Boolean valor;
         String line;
         for(valor = null; valor == null; valor = Boolean.parseBoolean(line)) {
@@ -57,7 +54,7 @@ public abstract class ObterValores {
         return valor;
     }
 
-    protected String obterValorString(String mensagemProUsuario) {
+    public String obterValorString(String mensagemProUsuario) {
         String valor;
         String line;
         for(valor = null; valor == null; valor = line) {

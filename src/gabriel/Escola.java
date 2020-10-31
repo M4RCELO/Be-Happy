@@ -1,5 +1,7 @@
-package ifpb.edu.br;
+package gabriel;
 
+import gabriel.dominio.Aluno;
+import gabriel.dominio.Professor;
 
 public class Escola extends ObterValores{
     public void dia_aluno(Aluno aluno){
