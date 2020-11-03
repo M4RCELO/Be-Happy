@@ -1,23 +1,18 @@
 package marcelo.buscas;
 
-import java.nio.file.Path;
-import java.nio.file.Paths;
-
 import javax.swing.JOptionPane;
 
-import marcelo.armazenamento.ArmazenamentoEmTexto;
+import marcelo.armazenamento.ArmazenamentoUsuariosSingleton;
 import marcelo.menu.Menu;
-import marcelo.menu.escola.MenuEscola;
 import marcelo.menu.factory.MenuFactory;
 
 public class BuscarUsuario {
 
-	ArmazenamentoEmTexto armazenamento = new ArmazenamentoEmTexto("/home/marcelo/Área de Trabalho/Códigos/Java/Be-Happy/Dados/Usuarios.txt");
-	Path arquivo_path = Paths.get("/home/marcelo/Área de Trabalho/Códigos/Java/Be-Happy/Dados", "Usuarios.txt");
+	ArmazenamentoUsuariosSingleton armazenamento = ArmazenamentoUsuariosSingleton.getInstancia();
 	
 	public void procurarUsuario(String matricula, String senha) {
 		
-		String texto = armazenamento.lerTexto(arquivo_path);
+		String texto = armazenamento.lerTexto();
 		String[] users = texto.split(";");
 		int entrou = 0;
 		

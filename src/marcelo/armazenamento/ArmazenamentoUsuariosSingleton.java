@@ -5,20 +5,27 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.List;
 
-public class ArmazenamentoEmTexto{
+public class ArmazenamentoUsuariosSingleton implements Armazenamento{
 
 	protected String nomeArquivo;
+	protected Path arquivo_path;
+	protected static ArmazenamentoUsuariosSingleton instancia;
 	
-	public ArmazenamentoEmTexto(String nomeArquivo) {
+	protected ArmazenamentoUsuariosSingleton(String nomeArquivo) {
 		this.nomeArquivo = nomeArquivo;
+		this.arquivo_path = Paths.get(nomeArquivo);
+	}
+	
+	public static ArmazenamentoUsuariosSingleton getInstancia() {
+		if(instancia == null) instancia = new ArmazenamentoUsuariosSingleton("/home/marcelo/Área de Trabalho/Códigos/Java/Be-Happy/Dados/Usuarios.txt");
+		return instancia;
 	}
 	
 	public void escreverTexto(String texto) {
 		try {
-			// O parametro é que indica se deve sobrescrever ou continua no
-			// arquivo.
 			FileWriter fw = new FileWriter(nomeArquivo, true);
 			BufferedWriter conexao = new BufferedWriter(fw);
 			conexao.write(texto);
@@ -29,10 +36,10 @@ public class ArmazenamentoEmTexto{
 		}
 	}
 	
-	public String lerTexto(Path path) {
+	public String lerTexto() {
 		String texto = "";
 		try {
-			List<String> linhas = Files.readAllLines(path);
+			List<String> linhas = Files.readAllLines(arquivo_path);
 			for (String linha : linhas) {
 				texto += linha;
 				texto += " ";

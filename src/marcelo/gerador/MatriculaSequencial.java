@@ -1,15 +1,11 @@
 package marcelo.gerador;
 
-import java.nio.file.Path;
-import java.nio.file.Paths;
-
-import marcelo.armazenamento.ArmazenamentoEmTexto;
+import marcelo.armazenamento.ArmazenamentoUsuariosSingleton;
 
 
 public class MatriculaSequencial {
 	
-	ArmazenamentoEmTexto armazenamento = new ArmazenamentoEmTexto("/home/marcelo/Área de Trabalho/Códigos/Java/Be-Happy/Dados/Usuarios.txt");
-	Path arquivo_path = Paths.get("/home/marcelo/Área de Trabalho/Códigos/Java/Be-Happy/Dados", "Usuarios.txt");
+	ArmazenamentoUsuariosSingleton armazenamento = ArmazenamentoUsuariosSingleton.getInstancia();
 	
 	public String obterProximoId() {
 		Integer maiorId = getMaiorId()+1;
@@ -26,17 +22,22 @@ public class MatriculaSequencial {
 	}
 	
 	private Integer getMaiorId() {
-		String texto = armazenamento.lerTexto(arquivo_path);
+		String texto = armazenamento.lerTexto();
 		String[] users = texto.split(";");
 		Integer maiorId = -1;
 		
 		for (int i = 0; i < users.length; i++) {
 			  String[] matriz_users = users[i].split(",");	
-			  matriz_users[2] = matriz_users[2].replace(" ", "");
+			  matriz_users[matriz_users.length-1] = matriz_users[matriz_users.length-1].replace(" ", "");
+			  int tipo = Integer.parseInt(matriz_users[matriz_users.length-1]);
 			  
-			  if(Integer.parseInt(matriz_users[2])>maiorId) {
-				  maiorId = Integer.parseInt(matriz_users[2]);
+			  if(tipo==1 || tipo==2 || tipo==4) {
+				  matriz_users[2] = matriz_users[2].replace(" ", "");
+				  if(Integer.parseInt(matriz_users[2])>maiorId) {
+					  maiorId = Integer.parseInt(matriz_users[2]);
+				  }
 			  }
+			  
 			  
 		}
 		

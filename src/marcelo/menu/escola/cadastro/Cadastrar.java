@@ -3,11 +3,11 @@ package marcelo.menu.escola.cadastro;
 import gabriel.dominio.Aluno;
 import gabriel.dominio.Professor;
 import gabriel.dominio.Responsavel;
-import marcelo.armazenamento.ArmazenamentoEmTexto;
+import marcelo.armazenamento.ArmazenamentoUsuariosSingleton;
 
 public class Cadastrar {
 	
-	ArmazenamentoEmTexto armazenamento = new ArmazenamentoEmTexto("/home/marcelo/Área de Trabalho/Códigos/Java/Be-Happy/Dados/Usuarios.txt");
+	ArmazenamentoUsuariosSingleton armazenamento = ArmazenamentoUsuariosSingleton.getInstancia();
 
 	
 	public void cadastrarAluno(Aluno aluno) {
