@@ -17,7 +17,7 @@ public class MenuCadastrarProfessor implements Menu{
 		System.out.println(menu);
 		CadastrarProfessorFacade facade = new CadastrarProfessorFacade();
 		facade.cadastrarProfessorFacade();
-		
+		System.out.println("O Professor foi cadastrado com sucesso");
 		return false;
 	}
 

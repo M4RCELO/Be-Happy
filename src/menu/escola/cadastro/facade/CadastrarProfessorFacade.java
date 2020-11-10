@@ -1,5 +1,6 @@
 package menu.escola.cadastro.facade;
 
+import dominio.ProfessorBuilder;
 import outros.ObterValores;
 import dominio.Professor;
 import gerador.MatriculaSequencial;
@@ -22,7 +23,7 @@ public class CadastrarProfessorFacade {
 		String senha = obterValores.obterValorString("Digite a senha do Professor: ");
 		String matricula = matriculaSequencial.obterProximoId();
 		int turma = obterValores.obterValorInteger("Digite a turma em que o Professor ensina: ");
-		Professor professor = new Professor(nome,senha,matricula,turma);
+		Professor professor = new ProfessorBuilder().setNome(nome).setSenha(senha).setMatricula(matricula).setTurma(turma).createProfessor();
 		cadastrar.cadastrarProfessor(professor);
 	}
 }

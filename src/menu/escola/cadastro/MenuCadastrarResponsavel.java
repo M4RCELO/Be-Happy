@@ -17,7 +17,7 @@ public class MenuCadastrarResponsavel implements Menu{
 		System.out.println(menu);
 		CadastrarResponsavelFacade facade = new CadastrarResponsavelFacade();
 		facade.cadastrarResponsavelFacade();
-		
+		System.out.println("O responsavel foi cadastrado com sucesso");
 		return false;
 	}
 

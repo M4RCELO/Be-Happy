@@ -14,6 +14,8 @@ public class Aluno {
         setMatricula(matricula);
         setTurma(turma);
         setCpf_responsavel(cpf_responsavel);
+
+
     }
 
     public String getMatricula() {

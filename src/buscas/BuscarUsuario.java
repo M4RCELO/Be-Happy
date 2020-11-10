@@ -4,7 +4,7 @@ import javax.swing.JOptionPane;
 
 import armazenamento.ArmazenamentoUsuariosSingleton;
 import menu.Menu;
-import menu.factory.MenuFactory;
+import menu.facadeMenu.MenuFacade;
 
 public class BuscarUsuario {
 
@@ -26,7 +26,7 @@ public class BuscarUsuario {
 					  matriz_users[matriz_users.length-1] = matriz_users[matriz_users.length-1].replace(" ", "");
 					  int tipo = Integer.parseInt(matriz_users[matriz_users.length-1]);
 					  
-					  Menu menu = MenuFactory.getExibirMenu(tipo);
+					  Menu menu = MenuFacade.getExibirMenu(tipo);
 					  menu.exibirMenu();
 					  
 				  }else {

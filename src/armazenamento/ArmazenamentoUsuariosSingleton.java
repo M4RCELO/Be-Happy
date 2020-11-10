@@ -20,7 +20,7 @@ public class ArmazenamentoUsuariosSingleton implements Armazenamento{
 	}
 	
 	public static ArmazenamentoUsuariosSingleton getInstancia() {
-		if(instancia == null) instancia = new ArmazenamentoUsuariosSingleton("/home/marcelo/Área de Trabalho/Códigos/Java/Be-Happy/Dados/Usuarios.txt");
+		if(instancia == null) instancia = new ArmazenamentoUsuariosSingleton("C:/Users/Gabri/IdeaProjects/Be-Happy-main/Dados/Usuarios.txt");
 		return instancia;
 	}
 	
