@@ -27,7 +27,6 @@ public class TurmasComposite {
         return listaAlunos;
     }
 
-
     public void setListaAlunos(ArrayList<Aluno> listaAlunos) {
         this.listaAlunos = listaAlunos;
     }

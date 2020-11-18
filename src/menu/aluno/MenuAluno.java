@@ -1,7 +1,9 @@
 package menu.aluno;
 
 import outros.ObterValores;
+
 import menu.Menu;
+import menu.aluno.atuhumor.TelaAtuHumor;
 
 public class MenuAluno extends ObterValores implements Menu{
 	
@@ -26,7 +28,9 @@ public class MenuAluno extends ObterValores implements Menu{
 					System.out.println("Relatar Bullying");
 					break;
 				case 2:
-					System.out.println("Atualizar Humor");
+					TelaAtuHumor window = new TelaAtuHumor();
+					window.run();
+					break;
 				case 3:
 					return false;
 				default:

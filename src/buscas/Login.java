@@ -3,14 +3,17 @@ package buscas;
 import javax.swing.JOptionPane;
 
 import armazenamento.ArmazenamentoUsuariosSingleton;
+import dominio.AlunoLogado;
 import menu.Menu;
-import menu.facadeMenu.MenuFacade;
+import menu.factory.MenuFactory;
 
-public class BuscarUsuario {
+public class Login {
+	
+	public static AlunoLogado alunoLogado;
 
 	ArmazenamentoUsuariosSingleton armazenamento = ArmazenamentoUsuariosSingleton.getInstancia();
 	
-	public void procurarUsuario(String matricula, String senha) {
+	public void fazerLogin(String matricula, String senha) {
 		
 		String texto = armazenamento.lerTexto();
 		String[] users = texto.split(";");
@@ -26,7 +29,9 @@ public class BuscarUsuario {
 					  matriz_users[matriz_users.length-1] = matriz_users[matriz_users.length-1].replace(" ", "");
 					  int tipo = Integer.parseInt(matriz_users[matriz_users.length-1]);
 					  
-					  Menu menu = MenuFacade.getExibirMenu(tipo);
+					  if (tipo==1) alunoLogado = new AlunoLogado(matriz_users[2], Integer.parseInt(matriz_users[3].replace(" ", "")), Long.parseLong(matriz_users[4].replace(" ", "")));
+					  
+					  Menu menu = MenuFactory.getExibirMenu(tipo);
 					  menu.exibirMenu();
 					  
 				  }else {

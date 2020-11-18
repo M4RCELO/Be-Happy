@@ -16,7 +16,7 @@ public class Cadastrar {
 	}
 	
 	public void cadastrarProfessor(Professor prof) {
-		String infos = prof.getNome()+", "+prof.getSenha()+", "+prof.getMatricula().toString()+", "+prof.getTurma().toString()+", 2 ;";
+		String infos = prof.getNome()+", "+prof.getSenha()+", "+prof.getMatricula().toString()+", 2 ;";
 		armazenamento.escreverTexto(infos);
 	}
 	

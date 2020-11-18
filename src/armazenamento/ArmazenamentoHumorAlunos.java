@@ -8,20 +8,14 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.List;
 
-public class ArmazenamentoUsuariosSingleton implements Armazenamento{
-
-	protected String nomeArquivo;
-	protected Path arquivo_path;
-	protected static ArmazenamentoUsuariosSingleton instancia;
+public class ArmazenamentoHumorAlunos implements Armazenamento{
 	
-	protected ArmazenamentoUsuariosSingleton(String nomeArquivo) {
-		this.nomeArquivo = nomeArquivo;
-		this.arquivo_path = Paths.get(nomeArquivo);
-	}
+	private String nomeArquivo;
+	private Path arquivo_path;
 	
-	public static ArmazenamentoUsuariosSingleton getInstancia() {
-		if(instancia == null) instancia = new ArmazenamentoUsuariosSingleton("/home/marcelo/Área de Trabalho/Códigos/Java/Be-Happy/Dados/Usuarios.txt");
-		return instancia;
+	public ArmazenamentoHumorAlunos() {
+		this.nomeArquivo = "/home/marcelo/Área de Trabalho/Códigos/Java/Be-Happy/Dados/HumorAlunos.txt";
+		this.arquivo_path = Paths.get("/home/marcelo/Área de Trabalho/Códigos/Java/Be-Happy/Dados/HumorAlunos.txt");
 	}
 	
 	public void escreverTexto(String texto) {
@@ -50,5 +44,5 @@ public class ArmazenamentoUsuariosSingleton implements Armazenamento{
 		}
 		return texto;
 	}
-	
+
 }

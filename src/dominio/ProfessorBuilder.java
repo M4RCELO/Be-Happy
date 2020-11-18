@@ -4,7 +4,6 @@ public class ProfessorBuilder {
     private String nome;
     private String senha;
     private String matricula;
-    private int turma;
 
     public ProfessorBuilder setNome(String nome) {
         this.nome = nome;
@@ -21,12 +20,7 @@ public class ProfessorBuilder {
         return this;
     }
 
-    public ProfessorBuilder setTurma(int turma) {
-        this.turma = turma;
-        return this;
-    }
-
     public Professor createProfessor() {
-        return new Professor(nome, senha, matricula, turma);
+        return new Professor(nome, senha, matricula);
     }
 }

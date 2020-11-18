@@ -2,7 +2,7 @@ package menu;
 
 import outros.ObterValores;
 import java.util.Scanner;
-import buscas.BuscarUsuario;
+import buscas.Login;
 
 public class MenuLogin extends ObterValores{
 	
@@ -10,7 +10,7 @@ public class MenuLogin extends ObterValores{
 	
 	private static final String LS = System.lineSeparator();
 	
-	private BuscarUsuario buscar = new BuscarUsuario();
+	private Login buscar = new Login();
 
 	public boolean exibirMenu() {
 		String menu = "";
@@ -22,7 +22,7 @@ public class MenuLogin extends ObterValores{
 			System.out.println(menu);
 			String matricula = obterValorString("Digite sua Matricula ou CPF: ");
 			String senha = obterValorString("Digite sua Senha: ");
-			buscar.procurarUsuario(matricula, senha);
+			buscar.fazerLogin(matricula, senha);
 			
 		}
 

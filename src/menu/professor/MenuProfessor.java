@@ -16,7 +16,6 @@ public class MenuProfessor extends ObterValores implements Menu{
 		menu += "     Menu Principal - Professor" + LS;
 		menu += "====================================" + LS;
 		menu += ++opcao + ". Comportamento diário" + LS;
-		menu += ++opcao + ". Atualizar o humor durante a aula" + LS;
 		menu += ++opcao + ". Atualização do humor dos alunos" + LS;
 		menu += ++opcao + ". Relatório Semanal" + LS;
 		menu += ++opcao + ". Relatar acontecimentos a coordenação" + LS;
@@ -30,18 +29,15 @@ public class MenuProfessor extends ObterValores implements Menu{
 					System.out.println("Comportamento diário");
 					break;
 				case 2:
-					System.out.println("Atualizar o humor durante a aula");
-					break;
-				case 3:
 					System.out.println("Atualização do humor dos alunos");
 					break;
-				case 4:
+				case 3:
 					System.out.println("Relatório Semanal");
 					break;
-				case 5:
+				case 4:
 					System.out.println("Relatar acontecimentos a coordenação");
 					break;
-				case 6:
+				case 5:
 					return false;
 				default:
 					System.out.println();

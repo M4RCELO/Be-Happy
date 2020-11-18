@@ -5,13 +5,11 @@ public class Professor{
     private String nome;
     private String senha;
     private String matricula;
-    private Integer turma;
 
-    public Professor (String nome, String senha, String matricula, int turma) {
+    public Professor (String nome, String senha, String matricula) {
         setNome(nome);
         setSenha(senha);
         setMatricula(matricula);
-        setTurma(turma);
 
     }
 
@@ -21,14 +19,6 @@ public class Professor{
 
     public void setMatricula(String matricula) {
         this.matricula = matricula;
-    }
-
-    public Integer getTurma() {
-        return turma;
-    }
-
-    public void setTurma(Integer turma) {
-        this.turma = turma;
     }
 
 	public String getNome() {
