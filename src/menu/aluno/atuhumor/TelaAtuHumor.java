@@ -41,12 +41,12 @@ public class TelaAtuHumor {
 				frmAvalieSeuHumor.dispose();
 			}
 		});
-		btnFeliz.setIcon(new ImageIcon("/home/marcelo/Área de Trabalho/Códigos/Java/Be-Happy/Images/feliz.png"));
+		btnFeliz.setIcon(new ImageIcon("C:/Users/Gabri/IdeaProjects/Be-Happy/Images/feliz.png"));
 		btnFeliz.setBounds(37, 50, 51, 51);
 		frmAvalieSeuHumor.getContentPane().add(btnFeliz);
 		
 		JButton btnTriste = new JButton("");
-		btnTriste.setIcon(new ImageIcon("/home/marcelo/Área de Trabalho/Códigos/Java/Be-Happy/Images/triste.png"));
+		btnTriste.setIcon(new ImageIcon("C:/Users/Gabri/IdeaProjects/Be-Happy/Images/triste.png"));
 		btnTriste.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				armazenar.Humor("Triste", Login.alunoLogado);
@@ -63,7 +63,7 @@ public class TelaAtuHumor {
 				frmAvalieSeuHumor.dispose();
 			}
 		});
-		btnRaiva.setIcon(new ImageIcon("/home/marcelo/Área de Trabalho/Códigos/Java/Be-Happy/Images/raiva.png"));
+		btnRaiva.setIcon(new ImageIcon("C:/Users/Gabri/IdeaProjects/Be-Happy/Images/raiva.png"));
 		btnRaiva.setBounds(199, 50, 51, 51);
 		frmAvalieSeuHumor.getContentPane().add(btnRaiva);
 		
@@ -72,5 +72,7 @@ public class TelaAtuHumor {
 		frmAvalieSeuHumor.getContentPane().add(lblComoVocEst);
 		
 		frmAvalieSeuHumor.setResizable(false);
+
+
 	}
 }
