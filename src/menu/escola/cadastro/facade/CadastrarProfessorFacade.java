@@ -22,7 +22,7 @@ public class CadastrarProfessorFacade {
 		String nome = obterValores.obterValorString("Digite o nome do Professor: ");
 		String senha = obterValores.obterValorString("Digite a senha do Professor: ");
 		String matricula = matriculaSequencial.obterProximoId();
-		Professor professor = new ProfessorBuilder().setNome(nome).setSenha(senha).setMatricula(matricula).createProfessor();
+		Professor professor = new ProfessorBuilder().nome(nome).senha(senha).matricula(matricula).criar();
 		cadastrar.cadastrarProfessor(professor);
 	}
 }

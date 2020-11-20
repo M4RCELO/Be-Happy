@@ -2,14 +2,19 @@ package dominio;
 
 import java.util.ArrayList;
 
+import armazenamento.ArmazenamentoTurmas;
+
 public class TurmasComposite {
+	private ArmazenamentoTurmas armazenamento;
     private Integer turma;
     private ArrayList<Aluno> listaAlunos;
 
     public TurmasComposite(Integer turma) {
         this.turma = turma;
-        listaAlunos = new ArrayList<Aluno>();
+        armazenamento = new ArmazenamentoTurmas(turma);
+        listaAlunos = armazenamento.recuperarTurmas();
     }
+    
     public void adicionarAluno(Aluno novoAluno){
         listaAlunos.add(novoAluno);
     }
@@ -23,7 +28,6 @@ public class TurmasComposite {
     }
 
     public ArrayList<Aluno> getListaAlunos() {
-
         return listaAlunos;
     }
 

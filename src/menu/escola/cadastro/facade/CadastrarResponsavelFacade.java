@@ -20,7 +20,7 @@ public class CadastrarResponsavelFacade {
 		String senha = obterValores.obterValorString("Digite a senha do Responsável: ");
 		Long cpf = obterValores.obterValorLong("Digite o CPF do Responsável: ");
 		String matri_aluno_respon = obterValores.obterValorString("Digite a matrícula do aluno de quem é Responsável: ");
-		Responsavel responsavel = new ResponsavelBuilder().setNome(nome).setSenha(senha).setCpf(cpf).setMatri_aluno_respon(matri_aluno_respon).createResponsavel();
+		Responsavel responsavel = new ResponsavelBuilder().nome(nome).senha(senha).cpf(cpf).matri_aluno_respon(matri_aluno_respon).criar();
 		cadastrar.cadastrarResponsavel(responsavel);
 	}
 	

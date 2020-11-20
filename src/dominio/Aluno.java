@@ -14,8 +14,12 @@ public class Aluno {
         setMatricula(matricula);
         setTurma(turma);
         setCpf_responsavel(cpf_responsavel);
-
-
+    }
+    
+    public Aluno(String nome, String matricula, Long cpf_responsavel) {
+        setNome(nome);
+        setMatricula(matricula);
+        setCpf_responsavel(cpf_responsavel);
     }
 
     public String getMatricula() {

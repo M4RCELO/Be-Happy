@@ -4,8 +4,10 @@ import javax.swing.JOptionPane;
 
 import armazenamento.ArmazenamentoUsuariosSingleton;
 import dominio.AlunoLogado;
-import menu.Menu;
-import menu.factory.MenuFactory;
+import menu.aluno.MenuAluno;
+import menu.escola.MenuEscola;
+import menu.professor.MenuProfessor;
+import menu.responsaveis.MenuResponsavel;
 
 public class Login {
 	
@@ -29,10 +31,24 @@ public class Login {
 					  matriz_users[matriz_users.length-1] = matriz_users[matriz_users.length-1].replace(" ", "");
 					  int tipo = Integer.parseInt(matriz_users[matriz_users.length-1]);
 					  
-					  if (tipo==1) alunoLogado = new AlunoLogado(matriz_users[2], Integer.parseInt(matriz_users[3].replace(" ", "")), Long.parseLong(matriz_users[4].replace(" ", "")));
-					  
-					  Menu menu = MenuFactory.getExibirMenu(tipo);
-					  menu.exibirMenu();
+					  if (tipo==1) {
+						  alunoLogado = new AlunoLogado(matriz_users[2], Integer.parseInt(matriz_users[3].replace(" ", "")), Long.parseLong(matriz_users[4].replace(" ", "")));
+						  MenuAluno menu = new MenuAluno();
+						  menu.exibirMenu();
+					  }
+					  else if(tipo==2) {
+						  MenuProfessor menu = new MenuProfessor();
+						  menu.exibirMenu();
+					  }
+					  else if(tipo==3) {
+						  MenuResponsavel menu = new MenuResponsavel();
+						  menu.exibirMenu();
+					  }
+					  else if(tipo==4) {
+						  MenuEscola menu = new MenuEscola();
+						  menu.exibirMenu();
+					  }
+			        
 					  
 				  }else {
 					  JOptionPane.showMessageDialog(null, "Senha incorreta.",
