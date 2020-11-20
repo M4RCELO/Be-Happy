@@ -1,5 +1,6 @@
 package menu.escola;
 
+import menu.escola.notificarPais.NotificacaoPais;
 import outros.ObterValores;
 import menu.Menu;
 import menu.escola.cadastro.MenuCadastrarUsers;
@@ -35,6 +36,8 @@ public class MenuEscola extends ObterValores implements Menu{
 					break;
 				case 3:
 					System.out.println("Notificar pais");
+					NotificacaoPais notificacaoPais = new NotificacaoPais();
+					notificacaoPais.Notificacao("0000");
 					break;
 				case 4:
 					System.out.println("Relatos de Bullying");
