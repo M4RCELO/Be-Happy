@@ -60,6 +60,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
@@ -76,6 +87,7 @@
       <updated>1605893269497</updated>
       <workItem from="1605893271367" duration="11181000" />
       <workItem from="1605906082607" duration="205000" />
+      <workItem from="1605998005452" duration="1637000" />
     </task>
     <servers />
   </component>
@@ -103,55 +115,41 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="488" y="70" key="#com.intellij.ide.util.MemberChooser/1366.0.1360.728/0.0.1366.728@0.0.1366.728" timestamp="1605900946054" />
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1605905965988">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1605999309991">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom/1366.0.1360.728/0.0.1366.728@0.0.1366.728" timestamp="1605905965988" />
-    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1605905965988">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom/1366.0.1360.728/0.0.1366.728@0.0.1366.728" timestamp="1605999309991" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1605999309991">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.center/1366.0.1360.728/0.0.1366.728@0.0.1366.728" timestamp="1605905965988" />
-    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1605905965988">
+    <state width="1323" height="179" key="GridCell.Tab.0.center/1366.0.1360.728/0.0.1366.728@0.0.1366.728" timestamp="1605999309991" />
+    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1605999309991">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.left/1366.0.1360.728/0.0.1366.728@0.0.1366.728" timestamp="1605905965988" />
-    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1605905965988">
+    <state width="1323" height="179" key="GridCell.Tab.0.left/1366.0.1360.728/0.0.1366.728@0.0.1366.728" timestamp="1605999309991" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1605999309991">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.right/1366.0.1360.728/0.0.1366.728@0.0.1366.728" timestamp="1605905965988" />
-    <state width="1323" height="266" key="GridCell.Tab.1.bottom" timestamp="1605903557956">
+    <state width="1323" height="179" key="GridCell.Tab.0.right/1366.0.1360.728/0.0.1366.728@0.0.1366.728" timestamp="1605999309991" />
+    <state width="1323" height="266" key="GridCell.Tab.1.bottom" timestamp="1605999294245">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="266" key="GridCell.Tab.1.bottom/1366.0.1360.728/0.0.1366.728@0.0.1366.728" timestamp="1605903557956" />
-    <state width="1323" height="266" key="GridCell.Tab.1.center" timestamp="1605903557956">
+    <state width="1323" height="266" key="GridCell.Tab.1.bottom/1366.0.1360.728/0.0.1366.728@0.0.1366.728" timestamp="1605999294245" />
+    <state width="1323" height="266" key="GridCell.Tab.1.center" timestamp="1605999294245">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="266" key="GridCell.Tab.1.center/1366.0.1360.728/0.0.1366.728@0.0.1366.728" timestamp="1605903557956" />
-    <state width="1323" height="266" key="GridCell.Tab.1.left" timestamp="1605903557956">
+    <state width="1323" height="266" key="GridCell.Tab.1.center/1366.0.1360.728/0.0.1366.728@0.0.1366.728" timestamp="1605999294245" />
+    <state width="1323" height="266" key="GridCell.Tab.1.left" timestamp="1605999294244">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="266" key="GridCell.Tab.1.left/1366.0.1360.728/0.0.1366.728@0.0.1366.728" timestamp="1605903557956" />
-    <state width="1323" height="266" key="GridCell.Tab.1.right" timestamp="1605903557956">
+    <state width="1323" height="266" key="GridCell.Tab.1.left/1366.0.1360.728/0.0.1366.728@0.0.1366.728" timestamp="1605999294244" />
+    <state width="1323" height="266" key="GridCell.Tab.1.right" timestamp="1605999294245">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="266" key="GridCell.Tab.1.right/1366.0.1360.728/0.0.1366.728@0.0.1366.728" timestamp="1605903557956" />
+    <state width="1323" height="266" key="GridCell.Tab.1.right/1366.0.1360.728/0.0.1366.728@0.0.1366.728" timestamp="1605999294245" />
     <state x="500" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605905923866">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="500" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1366.0.1360.728/0.0.1366.728@0.0.1366.728" timestamp="1605905923866" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/menu/escola/notificarPais/NotificacaoPais.java</url>
-          <line>13</line>
-          <properties class="menu.escola.notificarPais.NotificacaoPais" method="Notificacao">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
