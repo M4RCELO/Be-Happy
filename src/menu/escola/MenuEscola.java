@@ -1,5 +1,6 @@
 package menu.escola;
 
+import menu.escola.atualizaçãoDeHumor.AtualizacaoDeHumorEscola;
 import menu.escola.notificarPais.NotificacaoPais;
 import outros.ObterValores;
 import menu.Menu;
@@ -29,6 +30,8 @@ public class MenuEscola extends ObterValores implements Menu{
 			switch (opcaoEscolhida) {
 				case 1:
 					System.out.println("Atualização do humor dos alunos");
+					AtualizacaoDeHumorEscola atualizacaoDeHumorEscola=new AtualizacaoDeHumorEscola();
+					atualizacaoDeHumorEscola.VerAtualizacaohumor("0000");
 					break;
 				case 2:
 					MenuCadastrarUsers menuCadastrarUsers = new MenuCadastrarUsers();
