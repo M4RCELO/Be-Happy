@@ -13,31 +13,20 @@ public class MenuEscola extends ObterValores implements Menu{
 	@Override
 	public boolean exibirMenu() {
 		
+		int opcao = 0;
+		String menu = "";
+		menu += "====================================" + LS;
+		menu += "       Menu Principal - Escola" + LS;
+		menu += "===================================="+ LS;
+		menu += ++opcao + ". Atualização do humor dos alunos" + LS;
+		menu += ++opcao + ". Cadastrar usuário" + LS;
+		menu += ++opcao + ". Notificar pais" + LS;
+		menu += ++opcao + ". Relatos de Bullying" + LS;
+		menu += ++opcao + ". Sair" + LS;
 		
 		while (true) {
 			
-			String menu = "";
-			menu += "====================================" + LS;
-			menu += "       Menu Principal - Escola" + LS;
-			menu += "====================================";
-			
 			System.out.println(menu);
-			
-			ItemMenu [] menuItens = new ItemMenu[5];
-
-			menuItens[0] = new ItemMenu("Atualização do humor dos alunos");
-			menuItens[1] = new ItemMenu("Cadastrar usuário");
-			menuItens[2] = new ItemMenu("Notificar pais");
-			menuItens[3] = new ItemMenu("Relatos de Bullying");
-			menuItens[4] = new ItemMenu("Sair");
-			
-			MenuInterator menuIterator = new MenuInterator(menuItens);
-			
-			while (menuIterator.hasNext()) {
-				ItemMenu menuItem = (ItemMenu)menuIterator.next();
-				System.out.println(menuIterator.getPosicao().toString()+". "+menuItem.nome);
-			}
-			System.out.println();
 			
 			int opcaoEscolhida = obterValorInteger("Digite uma opção: ");
 			switch (opcaoEscolhida) {

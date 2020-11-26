@@ -2,7 +2,8 @@ package buscas;
 
 import javax.swing.JOptionPane;
 
-import armazenamento.ArmazenamentoUsuariosSingleton;
+import buscas.interator.LoginInterator;
+import buscas.interator.Usuarios;
 import dominio.AlunoLogado;
 import menu.aluno.MenuAluno;
 import menu.escola.MenuEscola;
@@ -12,39 +13,33 @@ import menu.responsaveis.MenuResponsavel;
 public class Login {
 	
 	public static AlunoLogado alunoLogado;
-
-	ArmazenamentoUsuariosSingleton armazenamento = ArmazenamentoUsuariosSingleton.getInstancia();
 	
 	public void fazerLogin(String matricula, String senha) {
 		
-		String texto = armazenamento.lerTexto();
-		String[] users = texto.split(";");
 		int entrou = 0;
 		
-		for (int i = 0; i < users.length; i++) {
-			  String[] matriz_users = users[i].split(",");	
-			  matriz_users[2] = matriz_users[2].replace(" ", "");
-			  matriz_users[1] = matriz_users[1].replace(" ", "");
-			  if (matriz_users[2].equals(matricula)) {
+		LoginInterator loginInterator = new LoginInterator();
+		
+		while (loginInterator.hasNext()) {
+			Usuarios user = (Usuarios) loginInterator.next();
+			
+			if (user.getMatricula().equals(matricula)) {
 				  entrou+=1;
-				  if(matriz_users[1].equals(senha)) {
-					  matriz_users[matriz_users.length-1] = matriz_users[matriz_users.length-1].replace(" ", "");
-					  int tipo = Integer.parseInt(matriz_users[matriz_users.length-1]);
-					  
-					  if (tipo==1) {
-						  alunoLogado = new AlunoLogado(matriz_users[2], Integer.parseInt(matriz_users[3].replace(" ", "")), Long.parseLong(matriz_users[4].replace(" ", "")));
+				  if(user.getSenha().equals(senha)) {  
+					  if (user.getTipo()==1) {
+						  alunoLogado = new AlunoLogado(user.getMatricula(), user.getTurma(), user.getCpf_responsavel());
 						  MenuAluno menu = new MenuAluno();
 						  menu.exibirMenu();
 					  }
-					  else if(tipo==2) {
+					  else if(user.getTipo()==2) {
 						  MenuProfessor menu = new MenuProfessor();
 						  menu.exibirMenu();
 					  }
-					  else if(tipo==3) {
+					  else if(user.getTipo()==3) {
 						  MenuResponsavel menu = new MenuResponsavel();
 						  menu.exibirMenu();
 					  }
-					  else if(tipo==4) {
+					  else if(user.getTipo()==4) {
 						  MenuEscola menu = new MenuEscola();
 						  menu.exibirMenu();
 					  }
@@ -56,6 +51,7 @@ public class Login {
 					  break;
 				  }
 			  }
+			
 		}
 		
 		if (entrou==0) {
