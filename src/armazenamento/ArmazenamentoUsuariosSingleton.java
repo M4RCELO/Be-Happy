@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.ArrayList;
 import java.util.List;
 
 public class ArmazenamentoUsuariosSingleton implements Armazenamento{
@@ -20,7 +21,7 @@ public class ArmazenamentoUsuariosSingleton implements Armazenamento{
 	}
 	
 	public static ArmazenamentoUsuariosSingleton getInstancia() {
-		if(instancia == null) instancia = new ArmazenamentoUsuariosSingleton("C:/Users/Gabri/IdeaProjects/Be-Happy/Dados/Usuarios.txt");
+		if(instancia == null) instancia = new ArmazenamentoUsuariosSingleton("/home/marcelo/Área de Trabalho/Códigos/Java/Be-Happy/Dados/Usuarios.txt");
 		return instancia;
 	}
 	

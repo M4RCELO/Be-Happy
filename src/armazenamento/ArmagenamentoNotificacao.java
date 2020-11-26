@@ -13,8 +13,8 @@ public class ArmagenamentoNotificacao implements Armazenamento{
     private Path arquivo_path;
 
     public ArmagenamentoNotificacao() {
-        this.nomeArquivo = "C:/Users/Gabri/IdeaProjects/Be-Happy/Dados/Notificacao.txt";
-        this.arquivo_path = Paths.get("C:/Users/Gabri/IdeaProjects/Be-Happy/Dados/Notificacao.txt");
+        this.nomeArquivo = "/home/marcelo/Área de Trabalho/Códigos/Java/Be-Happy/Dados/Notificacao.txt";
+        this.arquivo_path = Paths.get(nomeArquivo);
     }
 
     @Override
