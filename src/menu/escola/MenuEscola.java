@@ -2,8 +2,8 @@ package menu.escola;
 
 import menu.escola.atualizaçãoDeHumor.AtualizacaoDeHumorEscola;
 import menu.escola.notificarPais.NotificacaoPais;
+import menu.strategy.Menu;
 import outros.ObterValores;
-import menu.Menu;
 import menu.escola.cadastro.MenuCadastrarUsers;
 
 public class MenuEscola extends ObterValores implements Menu{

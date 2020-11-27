@@ -1,7 +1,7 @@
 package menu.professor;
 
+import menu.strategy.Menu;
 import outros.ObterValores;
-import menu.Menu;
 
 public class MenuProfessor extends ObterValores implements Menu{
 	

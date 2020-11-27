@@ -1,4 +1,4 @@
-package menu;
+package menu.strategy;
 
 public interface Menu{
 	

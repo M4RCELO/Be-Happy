@@ -1,7 +1,7 @@
 package menu.escola.cadastro;
 
+import menu.strategy.Menu;
 import outros.ObterValores;
-import menu.Menu;
 
 public class MenuCadastrarUsers extends ObterValores implements Menu{
 	

@@ -1,7 +1,7 @@
 package menu.escola.cadastro;
 
-import menu.Menu;
 import menu.escola.cadastro.facade.CadastrarResponsavelFacade;
+import menu.strategy.Menu;
 
 public class MenuCadastrarResponsavel implements Menu{
 	

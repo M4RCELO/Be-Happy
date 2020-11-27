@@ -1,7 +1,7 @@
 package menu.responsaveis;
 
+import menu.strategy.Menu;
 import outros.ObterValores;
-import menu.Menu;
 
 public class MenuResponsavel extends ObterValores implements Menu{
 	

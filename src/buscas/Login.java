@@ -9,6 +9,8 @@ import menu.aluno.MenuAluno;
 import menu.escola.MenuEscola;
 import menu.professor.MenuProfessor;
 import menu.responsaveis.MenuResponsavel;
+import menu.strategy.ExibirMenu;
+import menu.strategy.Menu;
 
 public class Login {
 	
@@ -26,24 +28,33 @@ public class Login {
 			if (user.getMatricula().equals(matricula)) {
 				  entrou+=1;
 				  if(user.getSenha().equals(senha)) {  
-					  if (user.getTipo()==1) {
-						  alunoLogado = new AlunoLogado(user.getMatricula(), user.getTurma(), user.getCpf_responsavel());
-						  MenuAluno menu = new MenuAluno();
-						  menu.exibirMenu();
-					  }
-					  else if(user.getTipo()==2) {
-						  MenuProfessor menu = new MenuProfessor();
-						  menu.exibirMenu();
-					  }
-					  else if(user.getTipo()==3) {
-						  MenuResponsavel menu = new MenuResponsavel();
-						  menu.exibirMenu();
-					  }
-					  else if(user.getTipo()==4) {
-						  MenuEscola menu = new MenuEscola();
-						  menu.exibirMenu();
-					  }
-			        
+					
+					  
+					ExibirMenu exibirMenu = new ExibirMenu();
+					Menu menu = null;
+					
+					switch (user.getTipo()) {
+					case 1:
+						alunoLogado = new AlunoLogado(user.getMatricula(), user.getTurma(), user.getCpf_responsavel());
+						menu = new MenuAluno();
+						break;
+						
+					case 2:
+						menu = new MenuProfessor();
+						break;
+						
+					case 3:
+						menu = new MenuResponsavel();
+						break;
+						
+					case 4:
+						menu = new MenuEscola();
+						break;
+					default:
+						break;
+					}
+					
+					exibirMenu.exibir(menu);
 					  
 				  }else {
 					  JOptionPane.showMessageDialog(null, "Senha incorreta.",

@@ -1,9 +1,8 @@
 package menu.aluno;
 
 import outros.ObterValores;
-
-import menu.Menu;
 import menu.aluno.atuhumor.TelaAtuHumor;
+import menu.strategy.Menu;
 
 public class MenuAluno extends ObterValores implements Menu{
 	
