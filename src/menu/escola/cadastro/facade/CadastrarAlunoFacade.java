@@ -7,16 +7,18 @@ import armazenamento.ArmazenamentoTurmas;
 import dominio.Aluno;
 import gerador.MatriculaSequencial;
 import menu.escola.cadastro.Cadastrar;
+import menu.escola.cadastro.aluno.adapter.CadastrarAdapter;
+import menu.escola.cadastro.aluno.adapter.CadastrarNaTurma;
+import menu.escola.cadastro.aluno.adapter.CadastrarNoUser;
+import menu.escola.cadastro.aluno.adapter.ICadastrar;
 
 public class CadastrarAlunoFacade {
 	
 	private ObterValores obterValores;
-	private Cadastrar cadastrar;
 	private MatriculaSequencial matriculaSequencial;
 	
 	public CadastrarAlunoFacade() {
 		this.obterValores = new ObterValores();
-		this.cadastrar = new Cadastrar();
 		this.matriculaSequencial = new MatriculaSequencial();
 	}
 	
@@ -32,10 +34,13 @@ public class CadastrarAlunoFacade {
 		TurmasComposite novaTurma = new TurmasComposite(turma);
 		novaTurma.adicionarAluno(new Aluno(nome,matricula,cpf_responsavel));
 		
-		ArmazenamentoTurmas armazenamentoTurmas = new ArmazenamentoTurmas(turma);
-		armazenamentoTurmas.escreverTexto(aluno.getNome()+", "+aluno.getMatricula().toString()+", "+aluno.getCpf_responsavel().toString()+" ;");
+		ICadastrar servico1 = new CadastrarNaTurma(turma);
+		CadastrarAdapter cadastrarAdapter1 = new CadastrarAdapter(servico1);
+		cadastrarAdapter1.cadastrar(aluno);
 		
-		cadastrar.cadastrarAluno(aluno);
+		ICadastrar servico2 = new CadastrarNoUser();
+		CadastrarAdapter cadastrarAdapter2 = new CadastrarAdapter(servico2);
+		cadastrarAdapter2.cadastrar(aluno);
 		
 	}
 

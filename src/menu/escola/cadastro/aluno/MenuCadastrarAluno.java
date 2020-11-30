@@ -1,4 +1,4 @@
-package menu.escola.cadastro;
+package menu.escola.cadastro.aluno;
 
 import menu.escola.cadastro.facade.CadastrarAlunoFacade;
 import menu.strategy.Menu;
@@ -8,7 +8,7 @@ public class MenuCadastrarAluno implements Menu{
 	private static final String LS = System.lineSeparator();
 
 	@Override
-	public boolean exibirMenu() {
+	public boolean setStrategyMenu() {
 		String menu = "";
 		menu += "====================================" + LS;
 		menu += "   Digite as informações do Aluno" + LS;

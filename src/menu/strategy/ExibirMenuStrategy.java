@@ -1,9 +1,9 @@
 package menu.strategy;
 
-public class ExibirMenu {
+public class ExibirMenuStrategy {
 	
 	public void exibir(Menu menu) {
-		menu.exibirMenu();
+		menu.setStrategyMenu();
 	}
 
 }

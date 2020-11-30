@@ -11,7 +11,7 @@ public class MenuEscola extends ObterValores implements Menu{
 	private static final String LS = System.lineSeparator();
 	
 	@Override
-	public boolean exibirMenu() {
+	public boolean setStrategyMenu() {
 		
 		int opcao = 0;
 		String menu = "";
@@ -37,7 +37,7 @@ public class MenuEscola extends ObterValores implements Menu{
 					break;
 				case 2:
 					MenuCadastrarUsers menuCadastrarUsers = new MenuCadastrarUsers();
-					menuCadastrarUsers.exibirMenu();
+					menuCadastrarUsers.setStrategyMenu();
 					break;
 				case 3:
 					System.out.println("Notificar pais");

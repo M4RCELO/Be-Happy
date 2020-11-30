@@ -9,7 +9,7 @@ import menu.aluno.MenuAluno;
 import menu.escola.MenuEscola;
 import menu.professor.MenuProfessor;
 import menu.responsaveis.MenuResponsavel;
-import menu.strategy.ExibirMenu;
+import menu.strategy.ExibirMenuStrategy;
 import menu.strategy.Menu;
 
 public class Login {
@@ -30,7 +30,7 @@ public class Login {
 				  if(user.getSenha().equals(senha)) {  
 					
 					  
-					ExibirMenu exibirMenu = new ExibirMenu();
+					ExibirMenuStrategy exibirMenuStrategy = new ExibirMenuStrategy();
 					Menu menu = null;
 					
 					switch (user.getTipo()) {
@@ -54,7 +54,7 @@ public class Login {
 						break;
 					}
 					
-					exibirMenu.exibir(menu);
+					exibirMenuStrategy.exibir(menu);
 					  
 				  }else {
 					  JOptionPane.showMessageDialog(null, "Senha incorreta.",

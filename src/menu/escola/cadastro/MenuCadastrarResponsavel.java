@@ -8,7 +8,7 @@ public class MenuCadastrarResponsavel implements Menu{
 	private static final String LS = System.lineSeparator();
 
 	@Override
-	public boolean exibirMenu() {
+	public boolean setStrategyMenu() {
 		String menu = "";
 		menu += "====================================" + LS;
 		menu += " Digite as informações do Responsável" + LS;

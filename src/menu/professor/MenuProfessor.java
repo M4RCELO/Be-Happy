@@ -8,7 +8,7 @@ public class MenuProfessor extends ObterValores implements Menu{
 	private static final String LS = System.lineSeparator();
 
 	@Override
-	public boolean exibirMenu() {
+	public boolean setStrategyMenu() {
 		
 		int opcao = 0;
 		String menu = "";

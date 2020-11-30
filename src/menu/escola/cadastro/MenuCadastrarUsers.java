@@ -1,5 +1,6 @@
 package menu.escola.cadastro;
 
+import menu.escola.cadastro.aluno.MenuCadastrarAluno;
 import menu.strategy.Menu;
 import outros.ObterValores;
 
@@ -8,7 +9,7 @@ public class MenuCadastrarUsers extends ObterValores implements Menu{
 	private static final String LS = System.lineSeparator();
 
 	@Override
-	public boolean exibirMenu() {
+	public boolean setStrategyMenu() {
 		int opcao = 0;
 		String menu = "";
 		menu += "====================================" + LS;
@@ -25,15 +26,15 @@ public class MenuCadastrarUsers extends ObterValores implements Menu{
 			switch (opcaoEscolhida) {
 				case 1:
 					MenuCadastrarAluno menuCadastrarAluno = new MenuCadastrarAluno();
-					menuCadastrarAluno.exibirMenu();
+					menuCadastrarAluno.setStrategyMenu();
 					break;
 				case 2:
 					MenuCadastrarProfessor menuCadastrarProfessor = new MenuCadastrarProfessor();
-					menuCadastrarProfessor.exibirMenu();
+					menuCadastrarProfessor.setStrategyMenu();
 					break;
 				case 3:
 					MenuCadastrarResponsavel menuCadastrarResponsavel = new MenuCadastrarResponsavel();
-					menuCadastrarResponsavel.exibirMenu();
+					menuCadastrarResponsavel.setStrategyMenu();
 					break;
 				case 4:
 					return false;
