@@ -1,6 +1,6 @@
 package menu.escola.notificarPais;
 
-import armazenamento.ArmagenamentoNotificacao;
+import armazenamento.ArmazenamentoNotificacao;
 import armazenamento.ArmazenamentoHumorAlunos;
 import armazenamento.ArmazenamentoUsuariosSingleton;
 import dominio.Aluno;
@@ -8,7 +8,7 @@ import outros.ObterValores;
 
 public class NotificacaoPais extends ObterValores {
     ArmazenamentoHumorAlunos humorAlunos = new ArmazenamentoHumorAlunos();
-    ArmagenamentoNotificacao notificacao = new ArmagenamentoNotificacao();
+    ArmazenamentoNotificacao notificacao = new ArmazenamentoNotificacao();
     ArmazenamentoUsuariosSingleton usuarios = ArmazenamentoUsuariosSingleton.getInstancia();
 
     public void Notificacao(String matricula) {

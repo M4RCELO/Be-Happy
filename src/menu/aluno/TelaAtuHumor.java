@@ -1,10 +1,10 @@
-package menu.aluno.atuhumor;
+package menu.aluno;
 
 import javax.swing.JFrame;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 
-import buscas.Login;
+import armazenamento.Amazenar;
 
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
@@ -13,7 +13,7 @@ import java.awt.event.ActionEvent;
 public class TelaAtuHumor {
 
 	private JFrame frmAvalieSeuHumor;
-	AmazenarHumor armazenar = new AmazenarHumor();
+	private Amazenar armazenar = new Amazenar();
 
 	public void run() {
 		try {
@@ -37,7 +37,7 @@ public class TelaAtuHumor {
 		JButton btnFeliz = new JButton("");
 		btnFeliz.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				armazenar.Humor("Feliz", Login.alunoLogado);
+				armazenar.humor("Feliz");
 				frmAvalieSeuHumor.dispose();
 			}
 		});
@@ -49,7 +49,7 @@ public class TelaAtuHumor {
 		btnTriste.setIcon(new ImageIcon("C:/Users/Gabri/IdeaProjects/Be-Happy/Images/triste.png"));
 		btnTriste.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				armazenar.Humor("Triste", Login.alunoLogado);
+				armazenar.humor("Triste");
 				frmAvalieSeuHumor.dispose();
 			}
 		});
@@ -59,7 +59,7 @@ public class TelaAtuHumor {
 		JButton btnRaiva = new JButton("");
 		btnRaiva.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				armazenar.Humor("Raiva", Login.alunoLogado);
+				armazenar.humor("Raiva");
 				frmAvalieSeuHumor.dispose();
 			}
 		});

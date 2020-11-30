@@ -1,7 +1,6 @@
 package menu.aluno;
 
 import outros.ObterValores;
-import menu.aluno.atuhumor.TelaAtuHumor;
 import menu.strategy.Menu;
 
 public class MenuAluno extends ObterValores implements Menu{
@@ -24,7 +23,8 @@ public class MenuAluno extends ObterValores implements Menu{
 			int opcaoEscolhida = obterValorInteger("Digite uma opção: ");
 			switch (opcaoEscolhida) {
 				case 1:
-					System.out.println("Relatar Bullying");
+					RelatarBullying relatarBullying = new RelatarBullying();
+					relatarBullying.relatar();
 					break;
 				case 2:
 					TelaAtuHumor window = new TelaAtuHumor();

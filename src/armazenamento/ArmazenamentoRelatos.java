@@ -8,17 +8,18 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.List;
 
-public class ArmagenamentoNotificacao implements Armazenamento{
-    private String nomeArquivo;
+public class ArmazenamentoRelatos implements Armazenamento{
+
+	private String nomeArquivo;
     private Path arquivo_path;
 
-    public ArmagenamentoNotificacao() {
-        this.nomeArquivo = "/home/marcelo/Área de Trabalho/Códigos/Java/Be-Happy/Dados/Notificacao.txt";
+    public ArmazenamentoRelatos() {
+        this.nomeArquivo = "/home/marcelo/Área de Trabalho/Códigos/Java/Be-Happy/Dados/Relatos.txt";
         this.arquivo_path = Paths.get(nomeArquivo);
     }
-
-    @Override
-    public void escreverTexto(String texto) {
+	
+	@Override
+	 public void escreverTexto(String texto) {
         try {
             FileWriter fw = new FileWriter(nomeArquivo, true);
             BufferedWriter conexao = new BufferedWriter(fw);
@@ -30,7 +31,7 @@ public class ArmagenamentoNotificacao implements Armazenamento{
         }
     }
 
-    @Override
+	@Override
     public String lerTexto() {
         String texto = "";
         try {
@@ -45,4 +46,5 @@ public class ArmagenamentoNotificacao implements Armazenamento{
         }
         return texto;
     }
+
 }
