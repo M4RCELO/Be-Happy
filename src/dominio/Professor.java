@@ -6,6 +6,7 @@ public class Professor{
     private String senha;
     private String matricula;
 
+
     public Professor (String nome, String senha, String matricula) {
         setNome(nome);
         setSenha(senha);
