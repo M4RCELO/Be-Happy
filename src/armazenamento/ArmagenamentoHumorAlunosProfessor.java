@@ -13,7 +13,7 @@ public class ArmagenamentoHumorAlunosProfessor implements Armazenamento{
     private Path arquivo_path;
 
     public ArmagenamentoHumorAlunosProfessor() {
-        this.nomeArquivo = "C:/Users/Gabri/IdeaProjects/Be-Happy/Dados/HumorAlunosProfessor.txt";;
+        this.nomeArquivo = "/home/marcelo/Área de Trabalho/Códigos/Java/Be-Happy2/Dados/HumorAlunosProfessor.txt";;
         this.arquivo_path = Paths.get(nomeArquivo);
     }
 

@@ -2,31 +2,40 @@ package buscas.interator;
 
 import java.util.ArrayList;
 
-import buscas.GetUsers;
+import dominio.Usuarios;
 
 public class LoginInterator implements Interator{
 	
-	ArrayList<Usuarios> users = new ArrayList<>();
-	int posicao = 0;
+	private ArrayList<Usuarios> lista;
+	private int posicao;
 
-	public LoginInterator() {
-		users = GetUsers.users();
+	public LoginInterator(ArrayList<Usuarios> users) {
+		this.lista = users;
+		posicao = 0;
 	}
 
 	@Override
-	public boolean hasNext() {
-		if (posicao >= users.size() || users.get(posicao) == null) {
-			return false;
-		} else {
-			return true;
-		}
+	public void first() {
+		posicao = 0;
 	}
 
 	@Override
-	public Object next() {
-		Usuarios user = users.get(posicao);
+	public void next() {
 		posicao++;
-		return user;
 	}
+
+	@Override
+	public boolean isDone() {
+		return posicao == lista.size();
+	}
+
+	@Override
+	public Usuarios currentItem() {
+		if(isDone()) posicao = lista.size()-1;
+		else if (posicao<0) posicao=0;
+		
+		return lista.get(posicao);
+	}
+
 	
 }

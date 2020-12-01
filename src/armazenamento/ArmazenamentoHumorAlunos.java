@@ -14,7 +14,7 @@ public class ArmazenamentoHumorAlunos implements Armazenamento{
 	private Path arquivo_path;
 	
 	public ArmazenamentoHumorAlunos() {
-		this.nomeArquivo = "C:/Users/Gabri/IdeaProjects/Be-Happy/Dados/HumorAlunos.txt";
+		this.nomeArquivo = "/home/marcelo/Área de Trabalho/Códigos/Java/Be-Happy2/Dados/HumorAlunos.txt";
 		this.arquivo_path = Paths.get(nomeArquivo);
 	}
 	

@@ -2,10 +2,12 @@ package buscas;
 
 import javax.swing.JOptionPane;
 
-import buscas.interator.LoginInterator;
-import buscas.interator.Usuarios;
+import buscas.interator.AgregadorUsers;
+import buscas.interator.Interator;
+import buscas.interator.Users;
 import dominio.AlunoLogado;
 import dominio.ProfessorLogado;
+import dominio.Usuarios;
 import menu.aluno.MenuAluno;
 import menu.escola.MenuEscola;
 import menu.professor.MenuProfessor;
@@ -16,17 +18,17 @@ import menu.strategy.Menu;
 public class Login {
 	
 	public static AlunoLogado alunoLogado;
-
 	public static ProfessorLogado professorLogado;
 	
 	public void fazerLogin(String matricula, String senha) {
 		
 		int entrou = 0;
 		
-		LoginInterator loginInterator = new LoginInterator();
+		AgregadorUsers usuarios = new Users();
 		
-		while (loginInterator.hasNext()) {
-			Usuarios user = (Usuarios) loginInterator.next();
+		for(Interator it = usuarios.criarInterator(); !it.isDone(); it.next()) {
+			
+			Usuarios user = it.currentItem();
 			
 			if (user.getMatricula().equals(matricula)) {
 				  entrou+=1;
@@ -43,7 +45,6 @@ public class Login {
 						break;
 						
 					case 2:
-						professorLogado = new ProfessorLogado(user.getMatricula());
 						menu = new MenuProfessor();
 						break;
 						

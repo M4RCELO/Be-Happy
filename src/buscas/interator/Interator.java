@@ -1,8 +1,12 @@
 package buscas.interator;
 
+import dominio.Usuarios;
+
 public interface Interator {
 	
-	boolean hasNext();
-	Object next();
+	void first();
+	void next();
+	boolean isDone();
+	Usuarios currentItem();
 
 }
