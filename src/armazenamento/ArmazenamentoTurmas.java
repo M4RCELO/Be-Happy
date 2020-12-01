@@ -17,7 +17,7 @@ public class ArmazenamentoTurmas implements Armazenamento {
 	private Path arquivo_path;
 	
 	public ArmazenamentoTurmas(Integer turma) {
-		this.nomeArquivo = "/home/marcelo/Área de Trabalho/Códigos/Java/Be-Happy/Dados/Turmas"+turma.toString()+".txt";
+		this.nomeArquivo = "C:/Users/Gabri/IdeaProjects/Be-Happy/Dados/Turmas"+turma.toString()+".txt";
 		this.arquivo_path = Paths.get(nomeArquivo);		
 	}
 	
