@@ -1,11 +1,11 @@
 package menu.aluno;
 
-import armazenamento.Amazenar;
+import armazenamento.AmazenarAluno;
 import outros.ObterValores;
 
 public class RelatarBullying extends ObterValores{
 
-	private Amazenar armazenar = new Amazenar();
+	private AmazenarAluno armazenar = new AmazenarAluno();
 	
 	public void relatar() {
 		System.out.println("====================================");
