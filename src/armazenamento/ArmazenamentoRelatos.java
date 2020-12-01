@@ -14,7 +14,7 @@ public class ArmazenamentoRelatos implements Armazenamento{
     private Path arquivo_path;
 
     public ArmazenamentoRelatos() {
-        this.nomeArquivo = "/home/marcelo/Área de Trabalho/Códigos/Java/Be-Happy/Dados/Relatos.txt";
+        this.nomeArquivo = "C:/Users/Gabri/IdeaProjects/Be-Happy/Dados/Relatos.txt";
         this.arquivo_path = Paths.get(nomeArquivo);
     }
 	
