@@ -1,5 +1,6 @@
 package menu.escola;
 
+import menu.escola.Relatos.RelatosEscola;
 import menu.escola.atualizaçãoDeHumor.AtualizacaoDeHumorEscola;
 import menu.escola.notificarPais.NotificacaoPais;
 import menu.strategy.Menu;
@@ -46,6 +47,9 @@ public class MenuEscola extends ObterValores implements Menu{
 					break;
 				case 4:
 					System.out.println("Relatos de Bullying");
+					RelatosEscola relatosEscola =new RelatosEscola();
+					boolean todos = obterValorBoolean("Deseja ver os relatos de todos os Alunos?");
+					relatosEscola.RelatosAlunosEscola(todos);
 					break;
 				case 5:
 					return false;
