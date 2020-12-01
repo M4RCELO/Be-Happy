@@ -4,7 +4,7 @@ import javax.swing.JFrame;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 
-import armazenamento.Amazenar;
+import armazenamento.AmazenarAluno;
 
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
@@ -13,7 +13,7 @@ import java.awt.event.ActionEvent;
 public class TelaAtuHumor {
 
 	private JFrame frmAvalieSeuHumor;
-	private Amazenar armazenar = new Amazenar();
+	private AmazenarAluno armazenar = new AmazenarAluno();
 
 	public void run() {
 		try {
@@ -24,8 +24,7 @@ public class TelaAtuHumor {
 		}
 	}
 
-	public TelaAtuHumor() {
-		initialize();
+	public TelaAtuHumor() {initialize();
 	}
 
 	private void initialize() {
