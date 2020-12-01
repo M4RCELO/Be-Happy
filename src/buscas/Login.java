@@ -5,6 +5,7 @@ import javax.swing.JOptionPane;
 import buscas.interator.LoginInterator;
 import buscas.interator.Usuarios;
 import dominio.AlunoLogado;
+import dominio.ProfessorLogado;
 import menu.aluno.MenuAluno;
 import menu.escola.MenuEscola;
 import menu.professor.MenuProfessor;
@@ -15,6 +16,8 @@ import menu.strategy.Menu;
 public class Login {
 	
 	public static AlunoLogado alunoLogado;
+
+	public static ProfessorLogado professorLogado;
 	
 	public void fazerLogin(String matricula, String senha) {
 		
@@ -40,6 +43,7 @@ public class Login {
 						break;
 						
 					case 2:
+						professorLogado = new ProfessorLogado(user.getMatricula());
 						menu = new MenuProfessor();
 						break;
 						
