@@ -7,7 +7,7 @@ public class ComportamentoDiario extends ObterValores {
    ArmazenamentoComportamentoDiario comportamentoDiario = new ArmazenamentoComportamentoDiario();
     public void compotamentoDiarioAluno( String matricula){
         String comportamento = obterValorString("Qual foi o comportamento desse aluno no dia?");
-        String noti= comportamento +","+matricula;
+        String noti= comportamento +","+matricula+";";
         comportamentoDiario.escreverTexto(noti);
     }
 }
