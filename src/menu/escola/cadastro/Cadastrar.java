@@ -4,11 +4,11 @@ import dominio.Aluno;
 import dominio.Professor;
 import dominio.Responsavel;
 import armazenamento.ArmazenamentoTurmas;
-import armazenamento.ArmazenamentoUsuariosSingleton;
+import armazenamento.ArmazenamentoUsuarios;
 
 public class Cadastrar {
 	
-	ArmazenamentoUsuariosSingleton armazenamento = ArmazenamentoUsuariosSingleton.getInstancia();
+	ArmazenamentoUsuarios armazenamento = new ArmazenamentoUsuarios();
 	
 	public void cadastrarAluno(Aluno aluno) {
 		String infos = aluno.getNome()+", "+aluno.getSenha()+", "+aluno.getMatricula().toString()+", "+aluno.getTurma().toString()+", "+aluno.getCpf_responsavel().toString()+", 1 ;";
