@@ -8,7 +8,7 @@ public class AcontecimentoCoordenação extends ObterValores {
 
     public void Acontecimento(String matricula){
         String acontecimento = obterValorString("O que aconteceu?");
-        String noti= acontecimento +","+matricula;
+        String noti= acontecimento +","+matricula+";";
         acontecimentos.escreverTexto(noti);
 
     }
