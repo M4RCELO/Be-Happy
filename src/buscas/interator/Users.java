@@ -2,12 +2,12 @@ package buscas.interator;
 
 import java.util.ArrayList;
 
-import armazenamento.ArmazenamentoUsuariosSingleton;
+import armazenamento.ArmazenamentoUsuarios;
 import dominio.Usuarios;
 
 public class Users implements AgregadorUsers{
 	
-	private static ArmazenamentoUsuariosSingleton armazenamento = ArmazenamentoUsuariosSingleton.getInstancia();
+	private static ArmazenamentoUsuarios armazenamento = new ArmazenamentoUsuarios ();
 	private ArrayList<Usuarios> users;
 	
 	public Users() {
