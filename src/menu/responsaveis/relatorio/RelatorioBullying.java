@@ -1,18 +1,19 @@
 package menu.responsaveis.relatorio;
 
 import armazenamento.ArmagenamentoRelatosProfessor;
+import armazenamento.ArmazenamentoRelatos;
 import outros.ObterValores;
 
 public class RelatorioBullying extends ObterValores {
-    ArmagenamentoRelatosProfessor relatosProfessor = new ArmagenamentoRelatosProfessor();
+    ArmazenamentoRelatos relatos = new ArmazenamentoRelatos();
 
     public void RBullying(String matriculaAluno){
-        String texto = relatosProfessor.lerTexto();
+        String texto = relatos.lerTexto();
         String[] users = texto.split(";");
         for (int i = 0; i < users.length; i++) {
             String[] matriz_users = users[i].split(",");
-            matriz_users[1] = matriz_users[1].replace(" ", "");
-            if (matriz_users[1].equals(matriculaAluno)){
+            matriz_users[0] = matriz_users[0].replace(" ", "");
+            if (matriz_users[0].equals(matriculaAluno)){
                 System.out.println(users[i]);
             }
         }
