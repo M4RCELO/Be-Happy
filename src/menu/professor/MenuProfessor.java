@@ -2,6 +2,7 @@ package menu.professor;
 
 import menu.aluno.TelaAtuHumor;
 import menu.professor.Comportamento.ComportamentoDiario;
+import menu.professor.Comportamento.Turmas;
 import menu.professor.Coordenacao.AcontecimentoCoordenação;
 import menu.professor.Relatorio.RelatorioProfessor;
 import menu.strategy.Menu;
@@ -29,10 +30,10 @@ public class MenuProfessor extends ObterValores implements Menu{
 			int opcaoEscolhida = obterValorInteger("Digite uma opção: ");
 			switch (opcaoEscolhida) {
 				case 1:
-					System.out.println("Comportamento diário");// passar um for no txt da turma do professor e mandar para a funçao
-					ComportamentoDiario comportamentoDiario = new ComportamentoDiario();
-					String matricula = obterValorString("Informe a matricula do aluno:");// vai ser substituida pelo for
-					comportamentoDiario.compotamentoDiarioAluno(matricula);
+					System.out.println("Comportamento diário");
+					Integer turma = obterValorInteger("Informe sua turma:");
+					Turmas turmas = new Turmas();
+					turmas.pecorrer(turma);
 
 					break;
 
