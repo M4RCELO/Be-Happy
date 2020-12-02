@@ -1,12 +1,12 @@
 package menu.professor.Relatorio;
 
-import armazenamento.ArmagenamentoHumorAlunosProfessor;
+import armazenamento.ArmazenamentoHumorAlunosProfessor;
 import armazenamento.ArmagenamentoRelatosProfessor;
 import outros.ObterValores;
 
 public class RelatorioProfessor extends ObterValores {
     ArmagenamentoRelatosProfessor armagenamentoRelatosProfessor = new ArmagenamentoRelatosProfessor();
-    ArmagenamentoHumorAlunosProfessor armagenamentoHumorAlunosProfessor = new ArmagenamentoHumorAlunosProfessor();
+    ArmazenamentoHumorAlunosProfessor armagenamentoHumorAlunosProfessor = new ArmazenamentoHumorAlunosProfessor();
 
     public void RelatorioDosProfessores(int tipo){ // colocar para ser os relatos só da turma do professor
         if(tipo==1){
