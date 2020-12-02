@@ -2,6 +2,7 @@ package dominio;
 
 public class Usuarios {
 
+
 	private String matricula;
 	private String senha;
 	private Integer turma;
@@ -61,7 +62,7 @@ public class Usuarios {
 	public void setCpf_responsavel(Long cpf_responsavel) {
 		this.cpf_responsavel = cpf_responsavel;
 	}
-	
-	
-	
+
+
+
 }
