@@ -12,7 +12,7 @@ public class RelatorioComportamental extends ObterValores {
         for (int i = 0; i < users.length; i++) {
             String[] matriz_users = users[i].split(",");
             matriz_users[1] = matriz_users[1].replace(" ", "");
-            if (matriz_users[3].equals(matriculaAluno)){
+            if (matriz_users[1].equals(matriculaAluno)){
                 System.out.println(users[i]);
             }
         }
