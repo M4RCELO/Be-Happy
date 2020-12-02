@@ -1,0 +1,2 @@
+Se comportou mal,0001;
+Se comportou mal,0003;
