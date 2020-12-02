@@ -95,7 +95,9 @@
       <workItem from="1606656430590" duration="844000" />
       <workItem from="1606785047224" duration="110000" />
       <workItem from="1606785227623" duration="8436000" />
-      <workItem from="1606828105675" duration="11199000" />
+      <workItem from="1606828105675" duration="11980000" />
+      <workItem from="1606849273633" duration="9967000" />
+      <workItem from="1606873945834" duration="930000" />
     </task>
     <servers />
   </component>
@@ -123,46 +125,46 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog/1366.0.1360.728/0.0.1366.728@0.0.1366.728" timestamp="1606789088686" />
-    <state x="488" y="70" key="#com.intellij.ide.util.MemberChooser" timestamp="1606834469106">
+    <state x="488" y="70" key="#com.intellij.ide.util.MemberChooser" timestamp="1606872718412">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="488" y="70" key="#com.intellij.ide.util.MemberChooser/1366.0.1360.728/0.0.1366.728@0.0.1366.728" timestamp="1606834469106" />
+    <state x="488" y="70" key="#com.intellij.ide.util.MemberChooser/1366.0.1360.728/0.0.1366.728@0.0.1366.728" timestamp="1606872718412" />
     <state x="363" y="100" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1606785105686">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="363" y="100" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/1366.0.1360.728/0.0.1366.728@0.0.1366.728" timestamp="1606785105686" />
-    <state width="1323" height="235" key="GridCell.Tab.0.bottom" timestamp="1606792476170">
+    <state width="1323" height="235" key="GridCell.Tab.0.bottom" timestamp="1606874576806">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="235" key="GridCell.Tab.0.bottom/1366.0.1360.728/0.0.1366.728@0.0.1366.728" timestamp="1606792476170" />
-    <state width="1323" height="235" key="GridCell.Tab.0.center" timestamp="1606792476170">
+    <state width="1323" height="235" key="GridCell.Tab.0.bottom/1366.0.1360.728/0.0.1366.728@0.0.1366.728" timestamp="1606874576806" />
+    <state width="1323" height="235" key="GridCell.Tab.0.center" timestamp="1606874576806">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="235" key="GridCell.Tab.0.center/1366.0.1360.728/0.0.1366.728@0.0.1366.728" timestamp="1606792476170" />
-    <state width="1323" height="235" key="GridCell.Tab.0.left" timestamp="1606792476170">
+    <state width="1323" height="235" key="GridCell.Tab.0.center/1366.0.1360.728/0.0.1366.728@0.0.1366.728" timestamp="1606874576806" />
+    <state width="1323" height="235" key="GridCell.Tab.0.left" timestamp="1606874576805">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="235" key="GridCell.Tab.0.left/1366.0.1360.728/0.0.1366.728@0.0.1366.728" timestamp="1606792476170" />
-    <state width="1323" height="235" key="GridCell.Tab.0.right" timestamp="1606792476170">
+    <state width="1323" height="235" key="GridCell.Tab.0.left/1366.0.1360.728/0.0.1366.728@0.0.1366.728" timestamp="1606874576805" />
+    <state width="1323" height="235" key="GridCell.Tab.0.right" timestamp="1606874576806">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="235" key="GridCell.Tab.0.right/1366.0.1360.728/0.0.1366.728@0.0.1366.728" timestamp="1606792476170" />
-    <state width="1323" height="266" key="GridCell.Tab.1.bottom" timestamp="1606792388982">
+    <state width="1323" height="235" key="GridCell.Tab.0.right/1366.0.1360.728/0.0.1366.728@0.0.1366.728" timestamp="1606874576806" />
+    <state width="1323" height="266" key="GridCell.Tab.1.bottom" timestamp="1606872392983">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="266" key="GridCell.Tab.1.bottom/1366.0.1360.728/0.0.1366.728@0.0.1366.728" timestamp="1606792388982" />
-    <state width="1323" height="266" key="GridCell.Tab.1.center" timestamp="1606792388982">
+    <state width="1323" height="266" key="GridCell.Tab.1.bottom/1366.0.1360.728/0.0.1366.728@0.0.1366.728" timestamp="1606872392983" />
+    <state width="1323" height="266" key="GridCell.Tab.1.center" timestamp="1606872392983">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="266" key="GridCell.Tab.1.center/1366.0.1360.728/0.0.1366.728@0.0.1366.728" timestamp="1606792388982" />
-    <state width="1323" height="266" key="GridCell.Tab.1.left" timestamp="1606792388982">
+    <state width="1323" height="266" key="GridCell.Tab.1.center/1366.0.1360.728/0.0.1366.728@0.0.1366.728" timestamp="1606872392983" />
+    <state width="1323" height="266" key="GridCell.Tab.1.left" timestamp="1606872392983">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="266" key="GridCell.Tab.1.left/1366.0.1360.728/0.0.1366.728@0.0.1366.728" timestamp="1606792388982" />
-    <state width="1323" height="266" key="GridCell.Tab.1.right" timestamp="1606792388982">
+    <state width="1323" height="266" key="GridCell.Tab.1.left/1366.0.1360.728/0.0.1366.728@0.0.1366.728" timestamp="1606872392983" />
+    <state width="1323" height="266" key="GridCell.Tab.1.right" timestamp="1606872392983">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="266" key="GridCell.Tab.1.right/1366.0.1360.728/0.0.1366.728@0.0.1366.728" timestamp="1606792388982" />
+    <state width="1323" height="266" key="GridCell.Tab.1.right/1366.0.1360.728/0.0.1366.728@0.0.1366.728" timestamp="1606872392983" />
     <state x="500" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605905923866">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -171,16 +173,9 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="65" y="0" key="new project wizard/1366.0.1360.728/0.0.1366.728@0.0.1366.728" timestamp="1606656294881" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/menu/professor/TelaHumorProfessor.java</url>
-          <line>9</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <state x="339" y="162" key="run.anything.popup" timestamp="1606853494501">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="339" y="162" key="run.anything.popup/1366.0.1360.728/0.0.1366.728@0.0.1366.728" timestamp="1606853494501" />
   </component>
 </project>
