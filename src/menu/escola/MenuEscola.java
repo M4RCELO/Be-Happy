@@ -1,5 +1,8 @@
 package menu.escola;
 
+import armazenamento.ArmazenamentoAcontecimentosCoordenacao;
+import menu.escola.MensagensPais.MensagensPais;
+import menu.escola.NotificaProfessor.NotiProfessor;
 import menu.escola.Relatos.RelatosEscola;
 import menu.escola.atualizaçãoDeHumor.AtualizacaoDeHumorEscola;
 import menu.escola.notificarPais.NotificacaoPais;
@@ -20,9 +23,11 @@ public class MenuEscola extends ObterValores implements Menu{
 		menu += "       Menu Principal - Escola" + LS;
 		menu += "===================================="+ LS;
 		menu += ++opcao + ". Atualização do humor dos alunos" + LS;
-		menu += ++opcao + ". Cadastrar usuário" + LS;
+		menu += ++opcao + ". Cadastrar usuários" + LS;
 		menu += ++opcao + ". Notificar pais" + LS;
 		menu += ++opcao + ". Relatos de Bullying" + LS;
+		menu += ++opcao + ". Notificaçao Professores" + LS;
+		menu += ++opcao + ". Mensagens dos Pais" + LS;
 		menu += ++opcao + ". Sair" + LS;
 		
 		while (true) {
@@ -37,6 +42,7 @@ public class MenuEscola extends ObterValores implements Menu{
 					atualizacaoDeHumorEscola.VerAtualizacaohumor("0000");
 					break;
 				case 2:
+					System.out.println("Cadastrar usuários");
 					MenuCadastrarUsers menuCadastrarUsers = new MenuCadastrarUsers();
 					menuCadastrarUsers.setStrategyMenu();
 					break;
@@ -44,6 +50,7 @@ public class MenuEscola extends ObterValores implements Menu{
 					System.out.println("Notificar pais");
 					NotificacaoPais notificacaoPais = new NotificacaoPais();
 					notificacaoPais.Notificacao("0000");
+
 					break;
 				case 4:
 					System.out.println("Relatos de Bullying");
@@ -52,7 +59,19 @@ public class MenuEscola extends ObterValores implements Menu{
 					relatosEscola.RelatosAlunosEscola(todos);
 					break;
 				case 5:
+					System.out.println("Notificação Professores");
+					NotiProfessor notiProfessor = new NotiProfessor();
+					notiProfessor.notiProfessor("0000");
+					break;
+				case 6:
+					System.out.println("Mensagens dos pais");
+					MensagensPais mensagensPais = new MensagensPais();
+					mensagensPais.mensagens("0000");
+
+					break;
+				case 7:
 					return false;
+
 				default:
 					System.out.println();
 					System.out.println("Erro! Opção desconhecida: " + opcaoEscolhida);
