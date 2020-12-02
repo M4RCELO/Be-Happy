@@ -19,7 +19,16 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e121f77-d9a4-4f76-8532-ba1287c144f1" name="Default Changelist" comment="" />
+    <list default="true" id="3e121f77-d9a4-4f76-8532-ba1287c144f1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/menu/escola/cadastro/aluno/chain/CadastroAlunoChain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/menu/escola/cadastro/aluno/chain/ChainFinal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/menu/escola/cadastro/aluno/chain/ValidarCampos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/menu/escola/cadastro/aluno/chain/VerificarCampos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/armazenamento/AmazenamentoAbstract.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/armazenamento/AmazenamentoAbstract.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/menu/escola/cadastro/aluno/MenuCadastrarAluno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menu/escola/cadastro/aluno/MenuCadastrarAluno.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/menu/escola/cadastro/facade/CadastrarAlunoFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menu/escola/cadastro/facade/CadastrarAlunoFacade.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,6 +37,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -47,19 +57,6 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="main.Main" />
-      <module name="Be-Happy" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="main.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -69,6 +66,19 @@
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.Main" />
+      <module name="Be-Happy" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -119,63 +129,5 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="&#10;ok" />
     <option name="LAST_COMMIT_MESSAGE" value="&#10;ok" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606789088686">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="137" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog/1366.0.1360.728/0.0.1366.728@0.0.1366.728" timestamp="1606789088686" />
-    <state x="488" y="70" key="#com.intellij.ide.util.MemberChooser" timestamp="1606872718412">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="488" y="70" key="#com.intellij.ide.util.MemberChooser/1366.0.1360.728/0.0.1366.728@0.0.1366.728" timestamp="1606872718412" />
-    <state x="363" y="100" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1606785105686">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="363" y="100" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/1366.0.1360.728/0.0.1366.728@0.0.1366.728" timestamp="1606785105686" />
-    <state width="1323" height="293" key="GridCell.Tab.0.bottom" timestamp="1606876815090">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="293" key="GridCell.Tab.0.bottom/1366.0.1360.728/0.0.1366.728@0.0.1366.728" timestamp="1606876815090" />
-    <state width="1323" height="293" key="GridCell.Tab.0.center" timestamp="1606876815089">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="293" key="GridCell.Tab.0.center/1366.0.1360.728/0.0.1366.728@0.0.1366.728" timestamp="1606876815089" />
-    <state width="1323" height="293" key="GridCell.Tab.0.left" timestamp="1606876815089">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="293" key="GridCell.Tab.0.left/1366.0.1360.728/0.0.1366.728@0.0.1366.728" timestamp="1606876815089" />
-    <state width="1323" height="293" key="GridCell.Tab.0.right" timestamp="1606876815090">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="293" key="GridCell.Tab.0.right/1366.0.1360.728/0.0.1366.728@0.0.1366.728" timestamp="1606876815090" />
-    <state width="1323" height="266" key="GridCell.Tab.1.bottom" timestamp="1606876490141">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="266" key="GridCell.Tab.1.bottom/1366.0.1360.728/0.0.1366.728@0.0.1366.728" timestamp="1606876490141" />
-    <state width="1323" height="266" key="GridCell.Tab.1.center" timestamp="1606876490141">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="266" key="GridCell.Tab.1.center/1366.0.1360.728/0.0.1366.728@0.0.1366.728" timestamp="1606876490141" />
-    <state width="1323" height="266" key="GridCell.Tab.1.left" timestamp="1606876490140">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="266" key="GridCell.Tab.1.left/1366.0.1360.728/0.0.1366.728@0.0.1366.728" timestamp="1606876490140" />
-    <state width="1323" height="266" key="GridCell.Tab.1.right" timestamp="1606876490141">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1323" height="266" key="GridCell.Tab.1.right/1366.0.1360.728/0.0.1366.728@0.0.1366.728" timestamp="1606876490141" />
-    <state x="500" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606874963585">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="500" y="278" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1366.0.1360.728/0.0.1366.728@0.0.1366.728" timestamp="1606874963585" />
-    <state x="65" y="0" key="new project wizard" timestamp="1606656294881">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="65" y="0" key="new project wizard/1366.0.1360.728/0.0.1366.728@0.0.1366.728" timestamp="1606656294881" />
-    <state x="339" y="162" key="run.anything.popup" timestamp="1606853494501">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="339" y="162" key="run.anything.popup/1366.0.1360.728/0.0.1366.728@0.0.1366.728" timestamp="1606853494501" />
   </component>
 </project>

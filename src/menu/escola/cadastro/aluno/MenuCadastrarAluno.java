@@ -18,7 +18,6 @@ public class MenuCadastrarAluno implements Menu{
 		CadastrarAlunoFacade facade = new CadastrarAlunoFacade();
 		facade.cadastrarAlunoFacade();
 		System.out.println("O aluno foi cadastrado com sucesso");
-		
 		return false;
 	}
 	

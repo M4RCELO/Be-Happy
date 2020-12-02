@@ -11,8 +11,8 @@ abstract class AmazenamentoAbstract {
 
     String nomeArquivo;
     Path arquivo_path;
-  //  String caminho = "C:/Users/marce/Desktop/Codigos/Java/Be-Happy/Dados/";
-     String caminho = "C:/Users/Gabri/IdeaProjects/Be-Happy/Dados/";
+    String caminho = "C:/Users/marce/Desktop/Codigos/Java/Be-Happy/Dados/";
+//    String caminho = "C:/Users/Gabri/IdeaProjects/Be-Happy/Dados/";
 
     public void escreverTexto(String texto) {
         try {
