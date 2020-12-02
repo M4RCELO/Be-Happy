@@ -21,7 +21,7 @@ public class MenuProfessor extends ObterValores implements Menu{
 		menu += "     Menu Principal - Professor" + LS;
 		menu += "====================================" + LS;
 		menu += ++opcao + ". Comportamento diário" + LS;
-		menu += ++opcao + ". Relatório Semanal" + LS;
+		menu += ++opcao + ". Relatório" + LS;
 		menu += ++opcao + ". Relatar acontecimentos a coordenação" + LS;
 		menu += ++opcao + ". Sair" + LS;
 		
@@ -34,14 +34,11 @@ public class MenuProfessor extends ObterValores implements Menu{
 					Integer turma = obterValorInteger("Informe sua turma:");
 					Turmas turmas = new Turmas();
 					turmas.pecorrer(turma);
-
 					break;
-
 				case 2:
-					System.out.println("Relatório Semanal");
-					int tipo = obterValorInteger("Qual relatório você deseja? Relatos (1) ou Humor (2)");
+					System.out.println("Relatório");
 					RelatorioProfessor relatorioProfessor = new RelatorioProfessor();
-					relatorioProfessor.RelatorioDosProfessores(tipo);
+					relatorioProfessor.RelatorioDosProfessores(1);
 					break;
 				case 3:
 					System.out.println("Relatar acontecimentos a coordenação");
