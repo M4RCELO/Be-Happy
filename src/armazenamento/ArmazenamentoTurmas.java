@@ -1,6 +1,6 @@
 package armazenamento;
 
-import java.io.BufferedWriter;
+
 import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -11,28 +11,16 @@ import java.util.List;
 
 import dominio.Aluno;
 
-public class ArmazenamentoTurmas implements Armazenamento {
+public class ArmazenamentoTurmas extends AmazenamentoAbstract {
 	
-	private String nomeArquivo;
-	private Path arquivo_path;
+
 	
 	public ArmazenamentoTurmas(Integer turma) {
-		this.nomeArquivo = "/home/marcelo/Área de Trabalho/Códigos/Java/Be-Happy2/Dados/Turmas"+turma.toString()+".txt";
+		this.nomeArquivo = caminho +"Turmas/"+turma.toString()+".txt";
 		this.arquivo_path = Paths.get(nomeArquivo);		
 	}
-	
-	public void escreverTexto(String texto) {
-		try {
-			FileWriter fw = new FileWriter(nomeArquivo, true);
-			BufferedWriter conexao = new BufferedWriter(fw);
-			conexao.write(texto);
-			conexao.newLine();
-			conexao.close();
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-	}
-	
+
+	@Override
 	public String lerTexto() {
 		String texto = "";
 		try {
@@ -51,7 +39,7 @@ public class ArmazenamentoTurmas implements Armazenamento {
 		}
 		return texto;
 	}
-	
+
 	public ArrayList<Aluno> recuperarTurmas() {
 		ArrayList<Aluno> listaAlunos = new ArrayList<Aluno>();
 		
@@ -67,7 +55,6 @@ public class ArmazenamentoTurmas implements Armazenamento {
 		}
 		
 		return listaAlunos;
-	
 	}
 
 }
