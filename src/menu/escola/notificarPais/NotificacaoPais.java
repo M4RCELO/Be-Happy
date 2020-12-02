@@ -2,14 +2,16 @@ package menu.escola.notificarPais;
 
 import armazenamento.ArmazenamentoNotificacao;
 import armazenamento.ArmazenamentoHumorAlunos;
-import armazenamento.ArmazenamentoUsuariosSingleton;
+import armazenamento.ArmazenamentoUsuarios;
+import buscas.Login;
 import dominio.Aluno;
 import outros.ObterValores;
 
 public class NotificacaoPais extends ObterValores {
     ArmazenamentoHumorAlunos humorAlunos = new ArmazenamentoHumorAlunos();
     ArmazenamentoNotificacao notificacao = new ArmazenamentoNotificacao();
-    ArmazenamentoUsuariosSingleton usuarios = ArmazenamentoUsuariosSingleton.getInstancia();
+    ArmazenamentoUsuarios usuarios = new ArmazenamentoUsuarios ();
+
 
     public void Notificacao(String matricula) {
         String texto = humorAlunos.lerTexto();
@@ -33,7 +35,7 @@ public class NotificacaoPais extends ObterValores {
                         Boolean noti = obterValorBoolean("Deseja notificar o responsavel desse aluno?");
 
                         if (noti==true){
-                            String notifi = "O aluno que o senhor(a) estar responsavel teve uma atualização de humor de tristeza"+","+matriz_user[3];
+                            String notifi = "O aluno que o senhor(a) estar responsavel teve uma atualização de humor de tristeza"+","+nome+";";
                             notificacao.escreverTexto(notifi);
                             continue;
                         }
