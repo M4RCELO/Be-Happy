@@ -3,12 +3,11 @@ package menu.escola.cadastro;
 import dominio.Aluno;
 import dominio.Professor;
 import dominio.Responsavel;
-import armazenamento.ArmazenamentoTurmas;
-import armazenamento.ArmazenamentoUsuarios;
+import armazenamento.ArmazenamentoUsuariosSingleton;
 
 public class Cadastrar {
 	
-	ArmazenamentoUsuarios armazenamento = new ArmazenamentoUsuarios();
+	ArmazenamentoUsuariosSingleton armazenamento = ArmazenamentoUsuariosSingleton.getInstance();
 	
 	public void cadastrarAluno(Aluno aluno) {
 		String infos = aluno.getNome()+", "+aluno.getSenha()+", "+aluno.getMatricula().toString()+", "+aluno.getTurma().toString()+", "+aluno.getCpf_responsavel().toString()+", 1 ;";
