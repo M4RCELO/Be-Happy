@@ -1,5 +1,6 @@
 package menu.responsaveis;
 
+import menu.responsaveis.MensagensEscola.MensagemEscola;
 import menu.responsaveis.Notificacao.NotificacaoEscola;
 import menu.responsaveis.relatorio.RelatorioBullying;
 import menu.responsaveis.relatorio.RelatorioComportamental;
@@ -20,7 +21,6 @@ public class MenuResponsavel extends ObterValores implements Menu{
 		menu += ++opcao + ". Relatório comportamental" + LS;
 		menu += ++opcao + ". Relatório Bullying" + LS;
 		menu += ++opcao + ". Enviar mensagem para a escola" + LS;
-		menu += ++opcao + ". Relatório Semanal" + LS;
 		menu += ++opcao + ". Notificação da escola" + LS;
 		menu += ++opcao + ". Sair" + LS;
 		
@@ -31,28 +31,28 @@ public class MenuResponsavel extends ObterValores implements Menu{
 				case 1:
 					System.out.println("Relatório comportamental");
 					RelatorioComportamental relatorioComportamental = new RelatorioComportamental();
-					String matricula = obterValorString("Informe a matricula do seu responsavel:");// colocar a matricula automatico
+					String matricula = obterValorString("Informe a matricula do seu Aluno responsavel:");
 					relatorioComportamental.RComportamental(matricula);
 					break;
 				case 2:
 					System.out.println("Relatório Bullying");
 					RelatorioBullying relatorioBullying = new RelatorioBullying();
-					String matriculaa = obterValorString("Informe a matricula do seu responsavel:");// colocar a matricula automatico
+					String matriculaa = obterValorString("Informe a matricula do seu Aluno responsavel:");
 					relatorioBullying.RBullying(matriculaa);
 					break;
 				case 3:
 					System.out.println("Enviar mensagem para a escola");
+					MensagemEscola mensagemEscola = new MensagemEscola();
+					mensagemEscola.mensagens("0000");
 					break;
+
 				case 4:
-					System.out.println("Relatório Semanal");// falar com Marcelo pra tirar
-					break;
-				case 5:
 					System.out.println("Notificação da escola");
 					NotificacaoEscola notificacaoEscola = new NotificacaoEscola();
-					String matriculaaa = obterValorString("Informe a matricula do seu responsavel:");// colocar a matricula automatico
+					String matriculaaa = obterValorString("Informe a matricula do seu Aluno responsavel:");
 					notificacaoEscola.notiEscola(matriculaaa);
 					break;
-				case 6:
+				case 5:
 					return false;
 				default:
 					System.out.println();
