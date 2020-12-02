@@ -7,6 +7,7 @@ import buscas.interator.Interator;
 import buscas.interator.Users;
 import dominio.AlunoLogado;
 import dominio.ProfessorLogado;
+import dominio.ResponsavelLogado;
 import dominio.Usuarios;
 import menu.aluno.MenuAluno;
 import menu.escola.MenuEscola;
@@ -19,6 +20,7 @@ public class Login {
 	
 	public static AlunoLogado alunoLogado;
 	public static ProfessorLogado professorLogado;
+	public static ResponsavelLogado responsavelLogado;
 	
 	public void fazerLogin(String matricula, String senha) {
 		
@@ -49,6 +51,7 @@ public class Login {
 						break;
 						
 					case 3:
+
 						menu = new MenuResponsavel();
 						break;
 						
