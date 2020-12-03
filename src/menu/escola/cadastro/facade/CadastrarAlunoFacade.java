@@ -1,7 +1,7 @@
 package menu.escola.cadastro.facade;
 
 import dominio.AlunoBuilder;
-import dominio.TurmasComposite;
+import dominio.Turmas;
 import menu.escola.cadastro.aluno.chain.CadastroAlunoChain;
 import menu.escola.cadastro.aluno.chain.ChainFinal;
 import menu.escola.cadastro.aluno.chain.ValidarCampos;
@@ -49,7 +49,7 @@ public class CadastrarAlunoFacade {
 			if (validarCampos.validacao()) break;
 		}
 
-		TurmasComposite novaTurma = new TurmasComposite(turma);
+		Turmas novaTurma = new Turmas(turma);
 		novaTurma.adicionarAluno(new Aluno(nome,matricula,cpf_responsavel));
 		
 		ICadastrar servico1 = new CadastrarNaTurma(turma);

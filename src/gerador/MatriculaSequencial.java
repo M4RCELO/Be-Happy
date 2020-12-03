@@ -1,11 +1,11 @@
 package gerador;
 
-import armazenamento.ArmazenamentoUsuarios;
+import armazenamento.ArmazenamentoUsuariosSingleton;
 
 
 public class MatriculaSequencial {
 	
-	ArmazenamentoUsuarios armazenamento = new ArmazenamentoUsuarios();
+	ArmazenamentoUsuariosSingleton armazenamento = ArmazenamentoUsuariosSingleton.getInstance();
 	
 	public String obterProximoId() {
 		Integer maiorId = getMaiorId()+1;
