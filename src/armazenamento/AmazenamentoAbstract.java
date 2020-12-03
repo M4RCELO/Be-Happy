@@ -7,7 +7,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.List;
 
-abstract class AmazenamentoAbstract {
+abstract class AmazenamentoAbstract implements Armazenamento{
 
     String nomeArquivo;
     Path arquivo_path;

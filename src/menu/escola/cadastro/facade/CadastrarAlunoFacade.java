@@ -40,11 +40,11 @@ public class CadastrarAlunoFacade {
 			aluno = new AlunoBuilder().nome(nome).senha(senha).matricula(matricula).turma(turma).cpf_responsavel(cpf_responsavel).criar();
 
 			CadastroAlunoChain validarCampos = new ValidarCampos(aluno);
-			CadastroAlunoChain verificarCPF = new VerificarCampos(aluno);
+			CadastroAlunoChain verificarCampos = new VerificarCampos(aluno);
 			CadastroAlunoChain chainFinal = new ChainFinal();
 
-			validarCampos.proximo(verificarCPF);
-			verificarCPF.proximo(chainFinal);
+			validarCampos.proximo(verificarCampos);
+			verificarCampos.proximo(chainFinal);
 
 			if (validarCampos.validacao()) break;
 		}

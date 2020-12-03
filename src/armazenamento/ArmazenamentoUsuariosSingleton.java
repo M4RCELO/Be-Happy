@@ -16,5 +16,4 @@ public class ArmazenamentoUsuariosSingleton extends AmazenamentoAbstract{
 			instancia = new ArmazenamentoUsuariosSingleton();
 		return instancia;
 	}
-
 }

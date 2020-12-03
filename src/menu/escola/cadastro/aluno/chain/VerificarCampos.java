@@ -26,7 +26,7 @@ public class VerificarCampos implements CadastroAlunoChain{
             return false;
         }
 
-        if(cpf.length()<11){
+        if(cpf.length()!=11){
             System.out.println("==============================================");
             System.out.println(" O CPF do responsável deve possuir 11 digitos.");
             System.out.println("==============================================");

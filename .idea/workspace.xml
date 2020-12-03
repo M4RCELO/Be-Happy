@@ -19,17 +19,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3e121f77-d9a4-4f76-8532-ba1287c144f1" name="Default Changelist" comment="Criação do Padrão Chain">
-      <change afterPath="$PROJECT_DIR$/src/armazenamento/Armazenamento.java" afterDir="false" />
+    <list default="true" id="3e121f77-d9a4-4f76-8532-ba1287c144f1" name="Default Changelist" comment="Atualização do Padrão Singleton">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/armazenamento/ArmazenamentoTurmas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/armazenamento/ArmazenamentoTurmas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/armazenamento/ArmazenamentoUsuarios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/armazenamento/ArmazenamentoUsuariosSingleton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/buscas/interator/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/buscas/interator/Users.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dominio/TurmasComposite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dominio/Turmas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gerador/MatriculaSequencial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gerador/MatriculaSequencial.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/menu/escola/cadastro/Cadastrar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menu/escola/cadastro/Cadastrar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dados/HumorAlunos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Dados/HumorAlunos.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dados/Relatos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Dados/Relatos.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dados/Usuarios.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Dados/Usuarios.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/armazenamento/AmazenamentoAbstract.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/armazenamento/AmazenamentoAbstract.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/armazenamento/ArmazenamentoUsuariosSingleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/armazenamento/ArmazenamentoUsuariosSingleton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/menu/escola/cadastro/aluno/chain/VerificarCampos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menu/escola/cadastro/aluno/chain/VerificarCampos.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/menu/escola/cadastro/facade/CadastrarAlunoFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menu/escola/cadastro/facade/CadastrarAlunoFacade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/menu/escola/notificarPais/NotificacaoPais.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/menu/escola/notificarPais/NotificacaoPais.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +52,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Padr-es-de-Projeto" />
@@ -118,7 +117,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606885594380</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Atualização do Padrão Singleton">
+      <created>1606951304089</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1606951304089</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -139,6 +145,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="&#10;ok" />
     <MESSAGE value="Criação do Padrão Chain" />
-    <option name="LAST_COMMIT_MESSAGE" value="Criação do Padrão Chain" />
+    <MESSAGE value="Atualização do Padrão Singleton" />
+    <option name="LAST_COMMIT_MESSAGE" value="Atualização do Padrão Singleton" />
   </component>
 </project>
